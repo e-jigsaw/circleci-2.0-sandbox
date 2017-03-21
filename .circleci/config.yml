@@ -6,6 +6,7 @@ jobs:
     working_directory: /home/ubuntu/circleci-2.0-sandbox
     steps:
       - checkout
+      - setup_docker_engine
       - run:
           name: Sample
           command: docker run -t node:7 node -v
