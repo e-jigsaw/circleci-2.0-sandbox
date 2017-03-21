@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: node:7
+    steps:
+      - checkout
+      - run:
+          name: Sample
+          command: docker run -t node:7 node -v
